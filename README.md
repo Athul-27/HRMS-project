@@ -201,7 +201,7 @@ JWT_SECRET=your_secret_key
 
 ### Login Page
 
-_Add screenshot here_
+![Login Page](screenshots/login.png)
 
 ---
 
