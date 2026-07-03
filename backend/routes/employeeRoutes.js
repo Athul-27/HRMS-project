@@ -84,7 +84,6 @@ router.post("/add", authMiddleware(["Admin", "HR"]), async (req, res) => {
       return res.status(400).json({ message: "Invalid health insurance plan" });
     }
 
-    const hashedPassword = await bcrypt.hash(password, 10);
 
     const newEmployee = new Employee({
       fullName,
@@ -99,7 +98,7 @@ router.post("/add", authMiddleware(["Admin", "HR"]), async (req, res) => {
       basicSalary,
       allowances,
       deductions,
-      password: hashedPassword,
+      password,
       healthInsurancePlan: healthInsurancePlan || "None",
       role: "Employee",
     });
