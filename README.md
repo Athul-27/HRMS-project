@@ -201,26 +201,23 @@ JWT_SECRET=your_secret_key
 
 ### Login Page
 
-![Login Page](screenshots/login.png)
+![Login Page](Screenshots/login.png)
 
 ---
 
 ### Dashboard
 
-_Add screenshot here_
-
+![Dashboard](Screenshots/dashboard.png)
 ---
 
 ### Employee Management
 
-_Add screenshot here_
-
+![Employee Management Page](Screenshots/employee%20management.png)
 ---
 
 ### Leave Management
 
-_Add screenshot here_
-
+![Leave Page](Screenshots/leave.png)
 ---
 
 ## 🚀 Future Improvements
