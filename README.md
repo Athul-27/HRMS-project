@@ -35,8 +35,11 @@ The system enables administrators to efficiently manage employees, departments, 
 - 🏢 Department Management
 - 📅 Attendance Management
 - 📝 Leave Management
-- 🔐 User Authentication
-- ✏️ CRUD Operations
+- 💰 Payroll Management
+- 🧾 Payslip Management
+- 📄 Job Application Management
+- 🔐 Secure Authentication (JWT)
+- ✏️ Complete CRUD Operations
 - 📱 Responsive User Interface
 
 ---
@@ -75,11 +78,21 @@ HRMS-project/
 │
 ├── backend/
 │   ├── config/
+│   │   └── db.js
 │   ├── controllers/
+│   │   └── authController.js
 │   ├── middleware/
+│   │   ├── authMiddleware.js
+│   │   └── validateRequest.js
 │   ├── models/
+│   │   ├── Attendance.js
+│   │   ├── Employee.js
+│   │   ├── JobApplication.js
+│   │   ├── Leave.js
+│   │   ├── Payroll.js
+│   │   ├── Payslip.js
+│   │   └── User.js
 │   ├── routes/
-│   ├── .env
 │   ├── package.json
 │   ├── package-lock.json
 │   └── server.js
@@ -87,17 +100,28 @@ HRMS-project/
 ├── frontend/
 │   ├── public/
 │   ├── src/
-│   ├── .gitignore
-│   ├── eslint.config.js
 │   ├── index.html
 │   ├── package.json
-│   ├── package-lock.json
-│   ├── README.md
-│   └── vite.config.js
+│   ├── vite.config.js
+│   └── eslint.config.js
 │
 ├── .gitignore
 └── README.md
 ```
+
+---
+
+## 📂 Folder Description
+
+| Folder | Purpose |
+|---------|----------|
+| `backend/config` | Database configuration and connection setup |
+| `backend/controllers` | Business logic for handling API requests |
+| `backend/middleware` | Authentication, authorization, and request validation |
+| `backend/models` | MongoDB/Mongoose schemas |
+| `backend/routes` | REST API route definitions |
+| `frontend/public` | Static assets served directly |
+| `frontend/src` | React components, pages, hooks, and application logic |
 
 ---
 
@@ -122,7 +146,7 @@ cd HRMS-project
 ```bash
 cd frontend
 npm install
-npm start
+npm run dev
 ```
 
 ---
@@ -134,6 +158,22 @@ cd backend
 npm install
 npm run dev
 ```
+
+---
+
+## 📡 API Modules
+
+The backend is organized into separate modules to handle different HRMS functionalities.
+
+- 🔐 Authentication
+- 👤 Employee Management
+- 📅 Attendance Management
+- 📝 Leave Management
+- 💰 Payroll Management
+- 🧾 Payslip Management
+- 📄 Job Application Management
+
+Each module follows a structured architecture consisting of routes, controllers, middleware, and database models to keep the code modular and maintainable.
 
 ---
 
@@ -201,7 +241,7 @@ Through this project, I gained practical experience in:
 - Building REST APIs using Express.js
 - Developing responsive interfaces with React.js
 - MongoDB database integration
-- Authentication and Authorization
+- JWT Authentication
 - CRUD Operations
 - Client-Server Communication
 - Git & GitHub Workflow
@@ -215,8 +255,4 @@ Through this project, I gained practical experience in:
 
 - GitHub: https://github.com/Athul-27
 
----
-
-## ⭐ Support
-
-If you found this project useful, consider giving it a ⭐ on GitHub.
+If you have any questions, suggestions, or feedback, feel free to connect through GitHub.
