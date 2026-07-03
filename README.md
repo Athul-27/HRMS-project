@@ -1,5 +1,9 @@
 # 🏢 HRMS - Human Resource Management System
 
+![React](https://img.shields.io/badge/React-19-blue?logo=react)
+![Node.js](https://img.shields.io/badge/Node.js-Express-green?logo=node.js)
+![MongoDB](https://img.shields.io/badge/MongoDB-Database-green?logo=mongodb)
+
 A full-stack **Human Resource Management System (HRMS)** built using the **MERN Stack** to streamline employee management within an organization.
 
 The application provides a centralized platform for managing employees, departments, attendance, and leave requests through an intuitive web interface. This project was developed to strengthen my skills in full-stack web development, REST API development, authentication, database management, and CRUD operations.
